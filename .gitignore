@@ -1,0 +1,11 @@
+dist/
+node_modules/
+.DS_Store
+
+# Google Cloud service-account keys / credentials — never commit these.
+# Keep the downloaded key file outside this repo (e.g. ~/.config/) instead;
+# these patterns are just a safety net in case one ends up here by accident.
+*service-account*.json
+*-key.json
+credentials/
+audio_podcast/

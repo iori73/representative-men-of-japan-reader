@@ -1,0 +1,56 @@
+[
+  {
+    "num": 0,
+    "slug": "00_prefatory_note",
+    "jp_title": "序文",
+    "en_title": "Prefatory Note",
+    "icon": "00-letter.svg",
+    "chunk_count": 10,
+    "reading_minutes": 1
+  },
+  {
+    "num": 1,
+    "slug": "01_saigo_takamori",
+    "jp_title": "西郷隆盛 — 新日本の建設者",
+    "en_title": "Saigo Takamori — A Founder of New Japan",
+    "icon": "01-mountain.svg",
+    "chunk_count": 403,
+    "reading_minutes": 41
+  },
+  {
+    "num": 2,
+    "slug": "02_uesugi_yozan",
+    "jp_title": "上杉鷹山 — 封建領主",
+    "en_title": "Uesugi Yozan — A Feudal Lord",
+    "icon": "02-crest.svg",
+    "chunk_count": 310,
+    "reading_minutes": 34
+  },
+  {
+    "num": 3,
+    "slug": "03_ninomiya_sontoku",
+    "jp_title": "二宮尊徳 — 農聖",
+    "en_title": "Ninomiya Sontoku — A Peasant Saint",
+    "icon": "03-sheaf.svg",
+    "chunk_count": 418,
+    "reading_minutes": 38
+  },
+  {
+    "num": 4,
+    "slug": "04_nakae_toju",
+    "jp_title": "中江藤樹 — 村の教師",
+    "en_title": "Nakae Toju — A Village Teacher",
+    "icon": "04-lantern.svg",
+    "chunk_count": 389,
+    "reading_minutes": 33
+  },
+  {
+    "num": 5,
+    "slug": "05_nichiren",
+    "jp_title": "日蓮 — 仏僧",
+    "en_title": "Saint Nichiren — A Buddhist Priest",
+    "icon": "05-lotus.svg",
+    "chunk_count": 425,
+    "reading_minutes": 45
+  }
+]
