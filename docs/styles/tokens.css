@@ -1,0 +1,30 @@
+:root {
+  /* --- 抹茶グリーン系: 表紙イメージ由来のメイン地色 --- */
+  --tea-green: #5C7A5E;
+  --tea-green-deep: #3E5642;
+  --tea-green-pale: #E4E9E1;
+
+  /* --- インク寄りの濃色（wa-colors category_chips 系から転用） --- */
+  --ink-pine: #36563C;
+  --ink: #292724;
+  --ink-soft: #55524C;
+
+  /* --- 紙・本文の地色（wa-colors ground 系トーンに寄せた薄暖色） --- */
+  --paper: #FAF7F0;
+  --paper-warm: #F3EEE1;
+
+  /* --- アクセント（章ごとに使い回す控えめな差し色） --- */
+  --accent-clay: #B0715A;
+  --accent-gold: #A98B3D;
+
+  --line: #D9D2C0;
+  --line-soft: #E9E4D6;
+
+  /* --- タイポグラフィ --- */
+  --font-serif-jp: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-serif-en: "Georgia", "Times New Roman", serif;
+  --font-sans-jp: "Hiragino Sans", "Yu Gothic", sans-serif;
+
+  --measure: 34em;
+  --radius: 4px;
+}

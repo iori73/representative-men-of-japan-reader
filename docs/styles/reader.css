@@ -1,0 +1,185 @@
+/* --- インデックス: ほぼ日的な番号付きリスト。カード/影は使わず余白で区切る --- */
+.chapter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.chapter-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+}
+.chapter-row:first-child { padding-top: 28px; }
+.chapter-row .icon {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  color: var(--tea-green);
+}
+.chapter-row .num {
+  flex: none;
+  font-family: var(--font-serif-en);
+  font-size: 13px;
+  color: var(--ink-soft);
+  width: 22px;
+  padding-top: 4px;
+}
+.chapter-row .titles { flex: 1; min-width: 0; }
+.chapter-row .en-title {
+  font-family: var(--font-serif-en);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 3px;
+}
+.chapter-row .jp-title {
+  font-family: var(--font-serif-jp);
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.chapter-row .meta {
+  flex: none;
+  font-family: var(--font-sans-jp);
+  font-size: 12px;
+  color: var(--ink-soft);
+  padding-top: 4px;
+  white-space: nowrap;
+}
+.chapter-row:hover .en-title { color: var(--tea-green-deep); }
+
+/* --- 章ページ本文: 段落ブロックの中にチャンク単位の行を並べる --- */
+.chapter-head {
+  padding: 20px 0 8px;
+}
+.chapter-head .num {
+  font-family: var(--font-sans-jp);
+  font-size: 12px;
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+}
+.chapter-head h1 {
+  font-family: var(--font-serif-en);
+  font-size: clamp(26px, 5vw, 34px);
+  margin: 6px 0 4px;
+}
+.chapter-head .jp-title {
+  font-family: var(--font-serif-jp);
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 0 0 28px;
+}
+
+.para {
+  margin: 0 0 30px;
+}
+.chunk {
+  margin: 0 0 12px;
+  scroll-margin-top: 24px;
+}
+.chunk .jp {
+  display: block;
+  font-family: var(--font-serif-jp);
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.9;
+  margin: 0 0 3px;
+}
+.chunk .en {
+  display: block;
+  font-family: var(--font-serif-en);
+  font-size: 19px;
+  color: var(--ink);
+  line-height: 1.75;
+  text-align: justify;
+  margin: 0;
+}
+.chunk.speaking .jp,
+.chunk.speaking .en {
+  background: var(--tea-green-pale);
+  border-radius: var(--radius);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0 3px;
+}
+
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-sans-jp);
+  font-size: 13px;
+}
+.chapter-nav a { text-decoration: none; }
+.chapter-nav a:hover { text-decoration: underline; }
+.chapter-nav .next { text-align: right; margin-left: auto; }
+.chapter-nav .label { display: block; color: var(--ink-soft); font-size: 11px; margin-bottom: 2px; }
+
+/* --- Phase 2: 読み上げコントロール（JSがロードされて初めて表示） --- */
+.read-aloud-bar {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 32px;
+  padding: 10px 14px;
+  background: var(--paper-warm);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-family: var(--font-sans-jp);
+  font-size: 13px;
+}
+.read-aloud-bar.ready { display: flex; }
+.read-aloud-bar button {
+  font: inherit;
+  font-size: 13px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.read-aloud-bar button:hover { border-color: var(--tea-green); }
+.read-aloud-bar input[type="range"] { accent-color: var(--tea-green); }
+
+@media (max-width: 480px) {
+  .chapter-row .meta { display: none; }
+}
+
+/* --- 読書位置の復帰バナー --- */
+.resume-banner {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 12px);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-sans-jp);
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+}
+.resume-banner.show { opacity: 1; transform: translate(-50%, 0); }
+.resume-banner button {
+  font: inherit;
+  font-size: 12px;
+  color: var(--paper);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius);
+  padding: 4px 9px;
+  cursor: pointer;
+}
+.resume-banner button:hover { border-color: #fff; }
