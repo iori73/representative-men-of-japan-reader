@@ -9,3 +9,4 @@ node_modules/
 *-key.json
 credentials/
 audio_podcast/
+.gcp-key.json
