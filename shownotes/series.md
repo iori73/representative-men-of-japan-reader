@@ -23,5 +23,5 @@ translation of this book exists.
 
 ## 関連リンク
 
-- 読書サイト (bilingual reading site, with resume + in-browser read-aloud): https://iori73.github.io/representative-men-of-japan-reader/ (※まだ未公開)
+- 読書サイト (bilingual reading site, with resume + in-browser read-aloud): https://iori73.github.io/representative-men-of-japan-reader/
 - 姉妹編: [The Book of Tea 茶の本](https://iori73.github.io/book-of-tea-reader/)
