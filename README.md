@@ -46,5 +46,4 @@ npm run serve   # ビルド + ローカルサーバ起動 (http://localhost:8090
 
 ## 公開について
 
-GitHub Pages で公開予定。実際にリポジトリをpublic化してGitHub Pagesを有効化する操作は、
-河野の最終判断を待ってから行う(ai-ops CLAUDE.md §3: 公開コンテンツの最終Publishは人間判断)。
+GitHub Pages で公開済み: https://iori73.github.io/representative-men-of-japan-reader/

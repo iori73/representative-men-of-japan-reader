@@ -22,4 +22,4 @@ Claude が積極的に介入してよい(コード変更・機能追加・バグ
 ## 方針
 
 - シンプルに保つ。book-of-tea-readerのbuild.mjs/CSS/JSをそのまま流用し、内容(タイトル・アイコン・著者情報)だけ差し替えている
-- 公開前(GitHub Pages公開)は河野の最終判断を仰ぐ(ai-ops CLAUDE.md §3)
+- GitHub Pagesで公開済み: https://iori73.github.io/representative-men-of-japan-reader/
