@@ -1,0 +1,14 @@
+{
+  "id": "representative-men-of-japan",
+  "title_en": "Representative Men of Japan",
+  "title_jp": "代表的日本人",
+  "author_en": "Kanzo Uchimura",
+  "author_jp": "内村鑑三",
+  "byline": "内村鑑三 (Kanzo Uchimura) / English original, 1908",
+  "hero_icon": "01-mountain.svg",
+  "cover_image": "cover.webp",
+  "chapter_label": "essay",
+  "title_separator": " — ",
+  "description": "内村鑑三「代表的日本人」を日本語→英語の対訳で読む",
+  "credit": "英語原文: 内村鑑三著 (1908年刊、パブリックドメイン、Internet Archive所蔵版に基づく)。日本語訳は既存訳を用いず原文から新たに翻訳したもの(Claude/河野いおり)。"
+}
