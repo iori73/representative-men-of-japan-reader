@@ -30,6 +30,12 @@
   function get(slug) {
     const total = bySlug[slug]?.total || 1;
     let p = read(key(slug));
+    // book-of-tea's new key has the same name as the old shared key, so it can
+    // still hold the old shape { chunkIndex, ts }: normalize it in place.
+    if (p && typeof p.i !== "number") {
+      p = typeof p.chunkIndex === "number" ? { i: p.chunkIndex, total, ts: p.ts || Date.now() } : null;
+      if (p) write(key(slug), p);
+    }
     if (!p) {
       const old = read(LEGACY(slug));
       if (old && typeof old.chunkIndex === "number") {
@@ -37,7 +43,7 @@
         write(key(slug), p);
       }
     }
-    if (!p) return null;
+    if (!p || !Number.isFinite(p.i)) return null;
     p.total = total;
     p.pct = Math.min(1, Math.max(0, p.i / total));
     p.done = p.i >= total;
