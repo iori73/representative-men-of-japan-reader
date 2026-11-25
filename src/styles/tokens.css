@@ -1,30 +1,121 @@
+/* Design tokens — shared by every bilingual reader.
+   Three reading themes (light / sepia / dark) + "auto" that follows the OS.
+   One accent (tea green) only; everything else is ink on paper. */
+
 :root {
-  /* --- 抹茶グリーン系: 表紙イメージ由来のメイン地色 --- */
-  --tea-green: #5C7A5E;
-  --tea-green-deep: #3E5642;
-  --tea-green-pale: #E4E9E1;
+  /* type */
+  --font-jp: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", "YuMincho", "Noto Serif JP", "Noto Serif CJK JP", serif;
+  --font-en: ui-serif, "Iowan Old Style", "Charter", "Georgia", serif;
+  --font-ui: system-ui, -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Noto Sans JP", sans-serif;
 
-  /* --- インク寄りの濃色（wa-colors category_chips 系から転用） --- */
-  --ink-pine: #36563C;
-  --ink: #292724;
-  --ink-soft: #55524C;
+  --scale: 1; /* set from settings: .88 .94 1 1.08 1.18 */
+  --text-jp: calc(17.5px * var(--scale));
+  --text-en: calc(17.5px * var(--scale));
+  --lh-jp: 1.95;
+  --lh-en: 1.6;
+  --measure: 36rem;
 
-  /* --- 紙・本文の地色（wa-colors ground 系トーンに寄せた薄暖色） --- */
-  --paper: #FAF7F0;
-  --paper-warm: #F3EEE1;
+  /* UI type (HIG-ish) */
+  --ui-caption: 12px;
+  --ui-footnote: 13px;
+  --ui-subhead: 15px;
+  --ui-body: 17px;
 
-  /* --- アクセント（章ごとに使い回す控えめな差し色） --- */
-  --accent-clay: #B0715A;
-  --accent-gold: #A98B3D;
+  /* shape & space */
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 16px;
+  --radius-pill: 999px;
+  --tap: 44px;
+  --appbar-h: 52px;
+  --player-h: 148px;
 
-  --line: #D9D2C0;
-  --line-soft: #E9E4D6;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --dur: 220ms;
 
-  /* --- タイポグラフィ --- */
-  --font-serif-jp: "Hiragino Mincho ProN", "Yu Mincho", serif;
-  --font-serif-en: "Georgia", "Times New Roman", serif;
-  --font-sans-jp: "Hiragino Sans", "Yu Gothic", sans-serif;
+  /* light (default) */
+  --bg: #FBFAF7;
+  --surface: #FFFFFF;
+  --surface-2: #F2F1ED;
+  --ink: #1D1D1B;
+  --ink-2: #45443F;
+  --ink-3: #6E6C66;
+  --line: rgba(29, 29, 27, .12);
+  --fill: rgba(120, 118, 110, .12);
+  --accent: #3E5642;
+  --accent-ink: #FFFFFF;
+  --accent-soft: rgba(62, 86, 66, .10);
+  --hl: rgba(92, 122, 94, .13);
+  --hl-strong: rgba(92, 122, 94, .32);
+  --material: rgba(251, 250, 247, .78);
+  --shadow: 0 8px 28px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .08);
+  --backdrop: rgba(0, 0, 0, .28);
+  color-scheme: light;
+}
 
-  --measure: 34em;
-  --radius: 4px;
+:root[data-theme="sepia"] {
+  --bg: #F5EFE2;
+  --surface: #FBF7EE;
+  --surface-2: #ECE4D2;
+  --ink: #2A251E;
+  --ink-2: #4A4237;
+  --ink-3: #75695A;
+  --line: rgba(60, 45, 25, .14);
+  --fill: rgba(120, 100, 70, .13);
+  --accent: #3E5642;
+  --accent-ink: #FFFFFF;
+  --accent-soft: rgba(62, 86, 66, .11);
+  --hl: rgba(92, 122, 94, .15);
+  --hl-strong: rgba(92, 122, 94, .34);
+  --material: rgba(245, 239, 226, .8);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #121314;
+  --surface: #1C1D1F;
+  --surface-2: #26272A;
+  --ink: #ECEAE4;
+  --ink-2: #C9C6BE;
+  --ink-3: #96938B;
+  --line: rgba(236, 234, 228, .14);
+  --fill: rgba(200, 198, 190, .14);
+  --accent: #A3C9A6;
+  --accent-ink: #10180F;
+  --accent-soft: rgba(163, 201, 166, .14);
+  --hl: rgba(163, 201, 166, .14);
+  --hl-strong: rgba(163, 201, 166, .34);
+  --material: rgba(18, 19, 20, .78);
+  --shadow: 0 8px 28px rgba(0, 0, 0, .5), 0 1px 3px rgba(0, 0, 0, .4);
+  --backdrop: rgba(0, 0, 0, .5);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] {
+    --bg: #121314;
+    --surface: #1C1D1F;
+    --surface-2: #26272A;
+    --ink: #ECEAE4;
+    --ink-2: #C9C6BE;
+    --ink-3: #96938B;
+    --line: rgba(236, 234, 228, .14);
+    --fill: rgba(200, 198, 190, .14);
+    --accent: #A3C9A6;
+    --accent-ink: #10180F;
+    --accent-soft: rgba(163, 201, 166, .14);
+    --hl: rgba(163, 201, 166, .14);
+    --hl-strong: rgba(163, 201, 166, .34);
+    --material: rgba(18, 19, 20, .78);
+    --shadow: 0 8px 28px rgba(0, 0, 0, .5), 0 1px 3px rgba(0, 0, 0, .4);
+    --backdrop: rgba(0, 0, 0, .5);
+    color-scheme: dark;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --text-jp: calc(17px * var(--scale));
+    --text-en: calc(17px * var(--scale));
+  }
 }

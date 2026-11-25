@@ -1,136 +1,221 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" data-theme="auto" data-show="both" data-layout="stack">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Representative Men of Japan 代表的日本人 — バイリンガル読書</title>
 <meta name="description" content="内村鑑三「代表的日本人」を日本語→英語の対訳で読む">
+<meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121314" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/representative-men-of-japan-reader/favicon.svg">
+<script>(function(){try{var s=JSON.parse(localStorage.getItem("bilingual-reader:settings")||"{}"),d=document.documentElement,z=[.88,.94,1,1.08,1.18];d.dataset.theme=s.theme||"auto";d.dataset.show=s.show||"both";d.dataset.layout=s.layout||"stack";d.style.setProperty("--scale",z[s.size==null?2:s.size]||1);}catch(e){}})();</script>
 <link rel="stylesheet" href="/representative-men-of-japan-reader/styles/tokens.css">
 <link rel="stylesheet" href="/representative-men-of-japan-reader/styles/base.css">
 <link rel="stylesheet" href="/representative-men-of-japan-reader/styles/reader.css">
-
 </head>
-<body class="">
+<body class="page-home">
 
-<div class="hero grain">
-  <div class="hero-inner">
-    <svg class="hero-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <path d="M4 48 20 22l8 12 6-9 26 23Z" fill="currentColor"/>
-  <circle cx="46" cy="16" r="6" fill="currentColor" opacity="0.7"/>
-</svg>
-
-    <h1>Representative Men of Japan</h1>
-    <p class="jp-title">代表的日本人</p>
-    <p class="byline">内村鑑三 (Kanzo Uchimura) / English original, 1908</p>
+<header class="appbar" id="appbar">
+  <div class="appbar-inner">
+    <span class="appbar-spacer"></span>
+    <div class="appbar-title" aria-hidden="true">代表的日本人</div>
+    <div class="appbar-actions">
+      
+      <button type="button" class="icon-btn" data-open="sheet-settings" aria-label="表示の設定"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 19l5-13 5 13M4.4 14.5h6.2"/><path d="M14 19l3.5-8.5L21 19M15.2 16h4.6"/></svg></button>
+    </div>
   </div>
-</div>
-<div class="wrap">
-  <ul class="chapter-list">
-    
-      <a class="chapter-row" href="/representative-men-of-japan-reader/chapters/00_prefatory_note.html">
-        <span class="num">00</span>
-        <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <rect x="8" y="14" width="48" height="36" rx="2" fill="currentColor"/>
-  <path d="M8 16l24 18 24-18" stroke="#fff" stroke-width="2.4" fill="none" opacity="0.85"/>
-</svg>
+</header>
+<main class="home">
+  <section class="book-hero">
+    <img class="book-cover-img" src="/representative-men-of-japan-reader/images/cover.webp" alt="代表的日本人 の表紙" width="800" height="800">
+    <div class="book-info">
+      <p class="eyebrow">バイリンガル読書 · 日本語 → English</p>
+      <h1 class="book-title-jp">代表的日本人</h1>
+      <p class="book-title-en">Representative Men of Japan</p>
+      <p class="book-byline">内村鑑三 (Kanzo Uchimura) / English original, 1908</p>
+      <p class="book-meta">6章 · 約192分 · 読み上げ付き</p>
+      <div class="cta">
+        <a class="btn-capsule" id="continue-btn" href="/representative-men-of-japan-reader/chapters/00_prefatory_note.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M3 5.4c0-.6.4-1 1-1.1 2.6-.4 5 .1 7.2 1.5v13.6c-2.2-1.3-4.6-1.8-7.2-1.5-.6.1-1-.4-1-1V5.4zm18 0c0-.6-.4-1-1-1.1-2.6-.4-5 .1-7.2 1.5v13.6c2.2-1.3 4.6-1.8 7.2-1.5.6.1 1-.4 1-1V5.4z"/></svg><span class="btn-capsule-label">読みはじめる</span></a>
+        <div class="cta-meta" id="continue-meta">
+          <span class="cta-chapter">序文</span>
+          <span class="cta-progress" hidden><span class="mini-track"><span class="mini-fill"></span></span><span class="cta-pct"></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <span class="titles">
-          <span class="en-title">Prefatory Note</span>
-          <span class="jp-title">序文</span>
-        </span>
-        <span class="meta">1 min</span>
-      </a>
+  <section class="contents" aria-labelledby="contents-title">
+    <h2 class="section-title" id="contents-title">目次</h2>
+    <ol class="chapter-list">
+      <li><a class="chapter-row" href="/representative-men-of-japan-reader/chapters/00_prefatory_note.html" data-slug="00_prefatory_note">
+      <span class="chapter-num">00</span>
+      <span class="chapter-titles">
+        <span class="chapter-jp">序文</span>
+        <span class="chapter-en">Prefatory Note</span>
+        <span class="progress-track" hidden><span class="progress-fill"></span></span>
+      </span>
+      <span class="chapter-meta"><span class="chapter-min">1分</span><span class="chapter-state"></span></span>
+      <span class="chevron" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span>
+    </a></li>
+<li><a class="chapter-row" href="/representative-men-of-japan-reader/chapters/01_saigo_takamori.html" data-slug="01_saigo_takamori">
+      <span class="chapter-num">01</span>
+      <span class="chapter-titles">
+        <span class="chapter-jp">西郷隆盛 — 新日本の建設者</span>
+        <span class="chapter-en">Saigo Takamori — A Founder of New Japan</span>
+        <span class="progress-track" hidden><span class="progress-fill"></span></span>
+      </span>
+      <span class="chapter-meta"><span class="chapter-min">41分</span><span class="chapter-state"></span></span>
+      <span class="chevron" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span>
+    </a></li>
+<li><a class="chapter-row" href="/representative-men-of-japan-reader/chapters/02_uesugi_yozan.html" data-slug="02_uesugi_yozan">
+      <span class="chapter-num">02</span>
+      <span class="chapter-titles">
+        <span class="chapter-jp">上杉鷹山 — 封建領主</span>
+        <span class="chapter-en">Uesugi Yozan — A Feudal Lord</span>
+        <span class="progress-track" hidden><span class="progress-fill"></span></span>
+      </span>
+      <span class="chapter-meta"><span class="chapter-min">34分</span><span class="chapter-state"></span></span>
+      <span class="chevron" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span>
+    </a></li>
+<li><a class="chapter-row" href="/representative-men-of-japan-reader/chapters/03_ninomiya_sontoku.html" data-slug="03_ninomiya_sontoku">
+      <span class="chapter-num">03</span>
+      <span class="chapter-titles">
+        <span class="chapter-jp">二宮尊徳 — 農聖</span>
+        <span class="chapter-en">Ninomiya Sontoku — A Peasant Saint</span>
+        <span class="progress-track" hidden><span class="progress-fill"></span></span>
+      </span>
+      <span class="chapter-meta"><span class="chapter-min">38分</span><span class="chapter-state"></span></span>
+      <span class="chevron" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span>
+    </a></li>
+<li><a class="chapter-row" href="/representative-men-of-japan-reader/chapters/04_nakae_toju.html" data-slug="04_nakae_toju">
+      <span class="chapter-num">04</span>
+      <span class="chapter-titles">
+        <span class="chapter-jp">中江藤樹 — 村の教師</span>
+        <span class="chapter-en">Nakae Toju — A Village Teacher</span>
+        <span class="progress-track" hidden><span class="progress-fill"></span></span>
+      </span>
+      <span class="chapter-meta"><span class="chapter-min">33分</span><span class="chapter-state"></span></span>
+      <span class="chevron" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span>
+    </a></li>
+<li><a class="chapter-row" href="/representative-men-of-japan-reader/chapters/05_nichiren.html" data-slug="05_nichiren">
+      <span class="chapter-num">05</span>
+      <span class="chapter-titles">
+        <span class="chapter-jp">日蓮 — 仏僧</span>
+        <span class="chapter-en">Saint Nichiren — A Buddhist Priest</span>
+        <span class="progress-track" hidden><span class="progress-fill"></span></span>
+      </span>
+      <span class="chapter-meta"><span class="chapter-min">45分</span><span class="chapter-state"></span></span>
+      <span class="chevron" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span>
+    </a></li>
+    </ol>
+  </section>
 
-      <a class="chapter-row" href="/representative-men-of-japan-reader/chapters/01_saigo_takamori.html">
-        <span class="num">01</span>
-        <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <path d="M4 48 20 22l8 12 6-9 26 23Z" fill="currentColor"/>
-  <circle cx="46" cy="16" r="6" fill="currentColor" opacity="0.7"/>
-</svg>
-
-        <span class="titles">
-          <span class="en-title">Saigo Takamori — A Founder of New Japan</span>
-          <span class="jp-title">西郷隆盛 — 新日本の建設者</span>
-        </span>
-        <span class="meta">41 min</span>
-      </a>
-
-      <a class="chapter-row" href="/representative-men-of-japan-reader/chapters/02_uesugi_yozan.html">
-        <span class="num">02</span>
-        <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <circle cx="32" cy="32" r="22" stroke="currentColor" stroke-width="3" fill="none"/>
-  <g fill="currentColor">
-    <ellipse cx="32" cy="18" rx="5" ry="9"/>
-    <ellipse cx="32" cy="46" rx="5" ry="9"/>
-    <ellipse cx="18" cy="32" rx="9" ry="5"/>
-    <ellipse cx="46" cy="32" rx="9" ry="5"/>
-  </g>
-  <circle cx="32" cy="32" r="5" fill="currentColor"/>
-</svg>
-
-        <span class="titles">
-          <span class="en-title">Uesugi Yozan — A Feudal Lord</span>
-          <span class="jp-title">上杉鷹山 — 封建領主</span>
-        </span>
-        <span class="meta">34 min</span>
-      </a>
-
-      <a class="chapter-row" href="/representative-men-of-japan-reader/chapters/03_ninomiya_sontoku.html">
-        <span class="num">03</span>
-        <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <path d="M32 54V20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-  <path d="M32 30c-8-6-14-16-12-24 10 2 18 10 18 20M32 30c8-6 14-16 12-24-10 2-18 10-18 20"
-    fill="currentColor" opacity="0.9"/>
-  <path d="M20 54h24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-</svg>
-
-        <span class="titles">
-          <span class="en-title">Ninomiya Sontoku — A Peasant Saint</span>
-          <span class="jp-title">二宮尊徳 — 農聖</span>
-        </span>
-        <span class="meta">38 min</span>
-      </a>
-
-      <a class="chapter-row" href="/representative-men-of-japan-reader/chapters/04_nakae_toju.html">
-        <span class="num">04</span>
-        <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <path d="M22 16h20v6H22z" fill="currentColor"/>
-  <path d="M18 26c0-2 2-4 4-4h20c2 0 4 2 4 4v20c0 2-2 4-4 4H22c-2 0-4-2-4-4Z" fill="currentColor" opacity="0.9"/>
-  <rect x="30" y="10" width="4" height="6" fill="currentColor"/>
-  <path d="M28 50h8v6h-8z" fill="currentColor"/>
-</svg>
-
-        <span class="titles">
-          <span class="en-title">Nakae Toju — A Village Teacher</span>
-          <span class="jp-title">中江藤樹 — 村の教師</span>
-        </span>
-        <span class="meta">33 min</span>
-      </a>
-
-      <a class="chapter-row" href="/representative-men-of-japan-reader/chapters/05_nichiren.html">
-        <span class="num">05</span>
-        <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <circle cx="32" cy="24" r="9" fill="currentColor"/>
-  <g fill="currentColor" opacity="0.85">
-    <path d="M32 34c-10 2-18 10-20 20 12 0 20-6 20-20Z"/>
-    <path d="M32 34c10 2 18 10 20 20-12 0-20-6-20-20Z"/>
-    <path d="M32 34c-4 6-4 14 0 20 4-6 4-14 0-20Z"/>
-  </g>
-</svg>
-
-        <span class="titles">
-          <span class="en-title">Saint Nichiren — A Buddhist Priest</span>
-          <span class="jp-title">日蓮 — 仏僧</span>
-        </span>
-        <span class="meta">45 min</span>
-      </a>
-  </ul>
   <footer class="site-footer">
-    <p>英語原文: 内村鑑三著 (1908年刊、パブリックドメイン、Internet Archive所蔵版に基づく)。
-    日本語訳は既存訳を用いず原文から新たに翻訳したもの(Claude/河野いおり)。
-    日本語→英語の対訳チャンクで交互に読めるよう構成しています。</p>
+    <p>英語原文: 内村鑑三著 (1908年刊、パブリックドメイン、Internet Archive所蔵版に基づく)。日本語訳は既存訳を用いず原文から新たに翻訳したもの(Claude/河野いおり)。</p>
+    <p>読み上げは、お使いの端末の音声で再生します。声の種類と質は端末によって変わります。</p>
   </footer>
-</div>
+</main>
+<dialog class="sheet" id="sheet-settings" aria-labelledby="sheet-settings-title">
+  <div class="sheet-grabber" aria-hidden="true"></div>
+  <header class="sheet-head">
+    <h2 id="sheet-settings-title">表示</h2>
+    <button type="button" class="icon-btn" data-close aria-label="閉じる"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </header>
+  <div class="sheet-body">
+    <div class="field">
+    <div class="field-label" id="lbl-show">言語</div>
+    <div class="segmented" role="radiogroup" aria-labelledby="lbl-show" data-setting="show">
+      <button type="button" role="radio" aria-checked="false" data-value="both">日英</button><button type="button" role="radio" aria-checked="false" data-value="jp">日本語</button><button type="button" role="radio" aria-checked="false" data-value="en">English</button>
+    </div>
+  </div>
+    <div class="field only-wide">
+      <div class="field">
+    <div class="field-label" id="lbl-layout">並べ方</div>
+    <div class="segmented" role="radiogroup" aria-labelledby="lbl-layout" data-setting="layout">
+      <button type="button" role="radio" aria-checked="false" data-value="stack">上下</button><button type="button" role="radio" aria-checked="false" data-value="side">左右</button>
+    </div>
+  </div>
+    </div>
+    <div class="field">
+      <div class="field-label" id="lbl-size">文字の大きさ</div>
+      <div class="size-row">
+        <span class="size-a small" aria-hidden="true">A</span>
+        <input type="range" id="set-size" min="0" max="4" step="1" value="2" aria-labelledby="lbl-size">
+        <span class="size-a large" aria-hidden="true">A</span>
+      </div>
+    </div>
+    <div class="field">
+      <div class="field-label" id="lbl-theme">テーマ</div>
+      <div class="themes" role="radiogroup" aria-labelledby="lbl-theme" data-setting="theme">
+        <button type="button" role="radio" aria-checked="false" data-value="auto" class="theme-swatch theme-auto">
+          <span class="swatch" aria-hidden="true"><span class="swatch-jp">あ</span><span class="swatch-en">Aa</span></span>
+          <span class="swatch-label">自動</span>
+        </button><button type="button" role="radio" aria-checked="false" data-value="light" class="theme-swatch theme-light">
+          <span class="swatch" aria-hidden="true"><span class="swatch-jp">あ</span><span class="swatch-en">Aa</span></span>
+          <span class="swatch-label">ライト</span>
+        </button><button type="button" role="radio" aria-checked="false" data-value="sepia" class="theme-swatch theme-sepia">
+          <span class="swatch" aria-hidden="true"><span class="swatch-jp">あ</span><span class="swatch-en">Aa</span></span>
+          <span class="swatch-label">セピア</span>
+        </button><button type="button" role="radio" aria-checked="false" data-value="dark" class="theme-swatch theme-dark">
+          <span class="swatch" aria-hidden="true"><span class="swatch-jp">あ</span><span class="swatch-en">Aa</span></span>
+          <span class="swatch-label">ダーク</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</dialog>
+<dialog class="sheet sheet-tall" id="sheet-toc" aria-labelledby="sheet-toc-title">
+  <div class="sheet-grabber" aria-hidden="true"></div>
+  <header class="sheet-head">
+    <h2 id="sheet-toc-title">目次</h2>
+    <button type="button" class="icon-btn" data-close aria-label="閉じる"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </header>
+  <div class="sheet-body sheet-scroll">
+    <ol class="toc-list" id="toc-list">
+      <li><a class="toc-row" href="/representative-men-of-japan-reader/chapters/00_prefatory_note.html" data-slug="00_prefatory_note">
+    <span class="toc-num">00</span>
+    <span class="toc-titles"><span class="toc-jp">序文</span><span class="toc-en">Prefatory Note</span>
+      <span class="progress-track" hidden><span class="progress-fill"></span></span>
+    </span>
+    <span class="toc-meta"><span class="toc-min">1分</span><span class="toc-state"></span></span>
+  </a></li><li><a class="toc-row" href="/representative-men-of-japan-reader/chapters/01_saigo_takamori.html" data-slug="01_saigo_takamori">
+    <span class="toc-num">01</span>
+    <span class="toc-titles"><span class="toc-jp">西郷隆盛 — 新日本の建設者</span><span class="toc-en">Saigo Takamori — A Founder of New Japan</span>
+      <span class="progress-track" hidden><span class="progress-fill"></span></span>
+    </span>
+    <span class="toc-meta"><span class="toc-min">41分</span><span class="toc-state"></span></span>
+  </a></li><li><a class="toc-row" href="/representative-men-of-japan-reader/chapters/02_uesugi_yozan.html" data-slug="02_uesugi_yozan">
+    <span class="toc-num">02</span>
+    <span class="toc-titles"><span class="toc-jp">上杉鷹山 — 封建領主</span><span class="toc-en">Uesugi Yozan — A Feudal Lord</span>
+      <span class="progress-track" hidden><span class="progress-fill"></span></span>
+    </span>
+    <span class="toc-meta"><span class="toc-min">34分</span><span class="toc-state"></span></span>
+  </a></li><li><a class="toc-row" href="/representative-men-of-japan-reader/chapters/03_ninomiya_sontoku.html" data-slug="03_ninomiya_sontoku">
+    <span class="toc-num">03</span>
+    <span class="toc-titles"><span class="toc-jp">二宮尊徳 — 農聖</span><span class="toc-en">Ninomiya Sontoku — A Peasant Saint</span>
+      <span class="progress-track" hidden><span class="progress-fill"></span></span>
+    </span>
+    <span class="toc-meta"><span class="toc-min">38分</span><span class="toc-state"></span></span>
+  </a></li><li><a class="toc-row" href="/representative-men-of-japan-reader/chapters/04_nakae_toju.html" data-slug="04_nakae_toju">
+    <span class="toc-num">04</span>
+    <span class="toc-titles"><span class="toc-jp">中江藤樹 — 村の教師</span><span class="toc-en">Nakae Toju — A Village Teacher</span>
+      <span class="progress-track" hidden><span class="progress-fill"></span></span>
+    </span>
+    <span class="toc-meta"><span class="toc-min">33分</span><span class="toc-state"></span></span>
+  </a></li><li><a class="toc-row" href="/representative-men-of-japan-reader/chapters/05_nichiren.html" data-slug="05_nichiren">
+    <span class="toc-num">05</span>
+    <span class="toc-titles"><span class="toc-jp">日蓮 — 仏僧</span><span class="toc-en">Saint Nichiren — A Buddhist Priest</span>
+      <span class="progress-track" hidden><span class="progress-fill"></span></span>
+    </span>
+    <span class="toc-meta"><span class="toc-min">45分</span><span class="toc-state"></span></span>
+  </a></li>
+    </ol>
+  </div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>window.__BOOK__ = {"id":"representative-men-of-japan","base":"/representative-men-of-japan-reader","title":"Representative Men of Japan","chapters":[{"slug":"00_prefatory_note","num":0,"label":"Preface","jp":"序文","en":"Prefatory Note","minutes":1,"total":9,"href":"/representative-men-of-japan-reader/chapters/00_prefatory_note.html"},{"slug":"01_saigo_takamori","num":1,"label":"Essay 01","jp":"西郷隆盛 — 新日本の建設者","en":"Saigo Takamori — A Founder of New Japan","minutes":41,"total":402,"href":"/representative-men-of-japan-reader/chapters/01_saigo_takamori.html"},{"slug":"02_uesugi_yozan","num":2,"label":"Essay 02","jp":"上杉鷹山 — 封建領主","en":"Uesugi Yozan — A Feudal Lord","minutes":34,"total":309,"href":"/representative-men-of-japan-reader/chapters/02_uesugi_yozan.html"},{"slug":"03_ninomiya_sontoku","num":3,"label":"Essay 03","jp":"二宮尊徳 — 農聖","en":"Ninomiya Sontoku — A Peasant Saint","minutes":38,"total":417,"href":"/representative-men-of-japan-reader/chapters/03_ninomiya_sontoku.html"},{"slug":"04_nakae_toju","num":4,"label":"Essay 04","jp":"中江藤樹 — 村の教師","en":"Nakae Toju — A Village Teacher","minutes":33,"total":388,"href":"/representative-men-of-japan-reader/chapters/04_nakae_toju.html"},{"slug":"05_nichiren","num":5,"label":"Essay 05","jp":"日蓮 — 仏僧","en":"Saint Nichiren — A Buddhist Priest","minutes":45,"total":424,"href":"/representative-men-of-japan-reader/chapters/05_nichiren.html"}]};</script>
+<script src="/representative-men-of-japan-reader/js/reader-ui.js" defer></script>
+<script src="/representative-men-of-japan-reader/js/reading-progress.js" defer></script>
+
 </body>
 </html>
